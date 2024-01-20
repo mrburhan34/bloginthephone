@@ -22,51 +22,48 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-image: url('Website-3/background.jpg');
+            background-image: url('20190428_111902-1-1-1.jpg')
             background-size: cover;
             position: sticky;
         }
 
         .phone {
             border-radius: 10%;
+            width: 10cm;
+            height: 15cm;
+            border: 2px solid gray;
             background-color: black;
-            width: 40cm;
-            height: 60cm;
-            border: 1px solid grey;
             display: flex;
-            align-items: center;
             justify-content: center;
-            position: sticky;
+            align-items: center;
+            position: relative;
         }
 
         .screen {
             border-radius: 10%;
+            width: 9.5cm;
+            height: 14.5cm;
             background-color: white;
-            width: 38cm;
-            height: 58cm;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            position: sticky;
             display: flex;
             flex-direction: column;
+            position: relative;
         }
 
         .camera {
-            height: 3cm;
-            width: 3cm;
+            height: 0.7cm;
+            width: 0.7cm;
             border-radius: 50%;
             background-color: black;
             position: absolute;
-            top: 6px;
+            top: 0;
             left: 50%;
             transform: translateX(-50%);
-            position: sticky;
             z-index: 100;
         }
 
+
         main {
-            padding: 50px;
+            padding: 44px;
             height: 1800px;
         }
 
@@ -96,22 +93,33 @@
 
         .fa-image,
         .fa-instagram,
-        .fa-phone,
+        .fa-phone {
+            font-size: 70px;
+            border-radius: 10%;
+            background-color: rgb(238, 238, 248);
+            color: black;
+            padding-left: 0.2cm;
+        }
+
         .fa-envelope,
         .fa-github {
-            font-size: 250px;
-            padding: 90px;
+            font-size: 70px;
             border-radius: 10%;
-            background-color: white;
+            background-color: rgb(238, 238, 248);
             color: black;
+            padding-left: 0.2cm;
+            padding-top: 0.5cm;
         }
-        
+
         .fa-house {
-            font-size: 150px;
-            padding: 90px;
+            font-size: 30px;
             border-radius: 10%;
-            background-color: white;
-            color: black;            
+            background-color: rgb(238, 238, 248);
+            color: black;
+            position: absolute;
+            bottom: 3px;
+            left: 50%;
+            transform: translateX(-50%);
         }
     </style>
 </head>
@@ -130,7 +138,7 @@
                             <a href="####"><i class="fa-solid fa-envelope fa-bounce"></i></a>
                             <a href="#####"><i class="fa-brands fa-github fa-bounce"></i></a>
                         </li>
-                    </ul>                    
+                    </ul>
                 </main>
                 <footer>
                     <i class="fa-solid fa-house"></i>
