@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/037fb8561e.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        h1 {
+            display: inline;
+            right: 60%;
+        }
+
+        .background {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('Website-3/background.jpg');
+            background-size: cover;
+            position: sticky;
+        }
+
+        .phone {
+            border-radius: 10%;
+            background-color: black;
+            width: 40cm;
+            height: 60cm;
+            border: 1px solid grey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+        }
+
+        .screen {
+            border-radius: 10%;
+            background-color: white;
+            width: 38cm;
+            height: 58cm;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            position: sticky;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .camera {
+            height: 3cm;
+            width: 3cm;
+            border-radius: 50%;
+            background-color: black;
+            position: absolute;
+            top: 6px;
+            left: 50%;
+            transform: translateX(-50%);
+            position: sticky;
+            z-index: 100;
+        }
+
+        main {
+            padding: 50px;
+            height: 1800px;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            margin-right: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .fa-bounce {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .fa-bounce:hover {
+            transform: scale(1.2);
+        }
+
+        .fa-image,
+        .fa-instagram,
+        .fa-phone,
+        .fa-envelope,
+        .fa-github {
+            font-size: 250px;
+            padding: 90px;
+            border-radius: 10%;
+            background-color: white;
+            color: black;
+        }
+        
+        .fa-house {
+            font-size: 150px;
+            padding: 90px;
+            border-radius: 10%;
+            background-color: white;
+            color: black;            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <div class="phone">
+            <div class="screen">
+                <div class="camera"></div>
+                <main>
+                    <ul>
+                        <li>
+                            <a href="Website-3/image.html"><i class="fa-solid fa-image fa-bounce"></i></a>
+                            <a href="##"><i class="fa-brands fa-instagram fa-bounce"></i></a>
+                            <a href="###"><i class="fa-solid fa-phone fa-bounce"></i></a>
+                            <a href="####"><i class="fa-solid fa-envelope fa-bounce"></i></a>
+                            <a href="#####"><i class="fa-brands fa-github fa-bounce"></i></a>
+                        </li>
+                    </ul>                    
+                </main>
+                <footer>
+                    <i class="fa-solid fa-house"></i>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

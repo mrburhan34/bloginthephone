@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+    <script src="https://kit.fontawesome.com/037fb8561e.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .background {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            background-image: url('H:/HTML/Website-3/background.jpg');
+            background-size: cover;
+        }
+
+        .phone {
+            border-radius: 10%;
+            width: 10cm;
+            height: 15cm;
+            border: 1px solid gray;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .screen {
+            border-radius: 10%;
+            width: 9.5cm;
+            height: 14.5cm;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .camera {
+            height: 0.7cm;
+            width: 0.7cm;
+            border-radius: 50%;
+            background-color: black;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 100;
+        }
+
+        img {
+            border-radius: 20%;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            float: left;
+            padding: 30px;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 3cm;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .fa-house {
+            font-size: 30px;
+            border-radius: 10%;
+            background-color: rgb(238, 238, 248);
+            color: black;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <div class="phone">
+            <div class="screen">
+                <div class="camera"></div>
+                <img src="Website-3/20190428_111902-1-1-1.jpg">
+                <main>
+                    <h2>Hello World!</h2>
+                    <h3>Hey there! I'm Syed Saqib Burhanuddin, an 8th-grade enthusiast from the vibrant city of
+                        Anantapur, nestled in the heart of Andhra Pradesh, India.</h3>
+                </main>
+                <footer>
+                    <a href="Website-3/index.html"><i class="fa-solid fa-house"></i></a>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
